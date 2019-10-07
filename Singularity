@@ -16,7 +16,7 @@ From: python:3.7.4-slim
     apt-get install -y $BUILDPKGS
 
     pip install --no-cache-dir -r /tmp/requirements_docker.txt
-    pip install --no-cache-dir --upgrade pyscenic==0.9.18
+    pip install --no-cache-dir  --no-dependencies --upgrade pyscenic==0.9.18
     pip install --no-cache-dir scanpy==1.4.4.post1
 
     apt-get remove --purge -y $BUILDPKGS && \
